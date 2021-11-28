@@ -22,8 +22,5 @@
   },
   "prettier": {
     "singleQuote": true
-  },
-  "engines": {
-    "node": "^16.13.0"
   }
 }
