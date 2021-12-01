@@ -58,8 +58,8 @@ const HomePage = () => {
 
   return (
     <div>
-      <header className="flex h-32 bg-white items-center shadow-md sticky top-0 w-full z-10">
-        <div className="w-32 h-full p-6">
+      <header className="flex h-32 bg-white items-center shadow-md sticky top-0 w-full z-10 px-6 space-x-4">
+        <div className="h-full py-4">
           <img src="./idea.png" alt="" className="h-full" />
         </div>
 
@@ -69,7 +69,7 @@ const HomePage = () => {
         </h1>
       </header>
 
-      <div className="container mx-auto space-y-6 prose md:prose-lg">
+      <div className="container mx-auto space-y-6 prose md:prose-lg lg:prose-xl px-6">
         <section>
           <blockquote>
             It always seems impossible until it’s done. ~ Nelson Mandela
