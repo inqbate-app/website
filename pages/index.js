@@ -63,10 +63,10 @@ const HomePage = () => {
           <img src="./idea.png" alt="" className="h-full" />
         </div>
 
-        <h1 className="font-bold flex items-center flex-1 space-x-4 text-gray-400">
-          <span className="text-primary-default text-2xl">INQBATE</span>
-          <span>real end to end solution for startups</span>
-        </h1>
+        <div className="font-bold md:flex md:items-center flex-1 md:space-x-4 text-gray-400">
+          <h1 className="text-primary-default text-2xl">INQBATE</h1>
+          <p>real end to end solution for startups</p>
+        </div>
       </header>
 
       <div className="container mx-auto space-y-6 prose md:prose-lg lg:prose-xl px-6">
@@ -118,7 +118,7 @@ const HomePage = () => {
             </p>
           )) || (
             <form onSubmit={handleSubmit(onSubmit)}>
-              <div className="flex items-center space-x-2">
+              <div className="grid grid-cols-1 gap-2">
                 <label htmlFor="email">Contact us today:</label>
 
                 <div className="flex flex-1 items-stretch space-x-2">
