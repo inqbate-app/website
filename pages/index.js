@@ -40,7 +40,7 @@ const HomePage = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('https://submit-form.com/kVXf1w8Y', {
+      await fetch('https://submit-form.com/kVXf1w8Y', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -49,7 +49,6 @@ const HomePage = () => {
         body: JSON.stringify(data),
       });
 
-      console.log(response);
       setSent(true);
     } finally {
       setLoading(false);
@@ -63,13 +62,13 @@ const HomePage = () => {
           <img src="./idea.png" alt="" className="h-full" />
         </div>
 
-        <div className="font-bold md:flex md:items-center flex-1 md:space-x-4 text-gray-400">
-          <h1 className="text-primary-default text-2xl">INQBATE</h1>
-          <p>real end to end solution for startups</p>
+        <div className="font-bold md:flex md:items-center flex-1 text-gray-400 md:divide-x-2">
+          <h1 className="text-primary-default text-2xl md:pr-2">INQBATE</h1>
+          <p className="md:pl-2">real end to end solution for startups</p>
         </div>
       </header>
 
-      <div className="container mx-auto space-y-6 prose md:prose-lg lg:prose-xl px-6">
+      <div className="container mx-auto space-y-6 prose md:prose-lg lg:prose-xl px-6 pb-6">
         <section>
           <blockquote>
             It always seems impossible until it’s done. ~ Nelson Mandela
@@ -132,7 +131,7 @@ const HomePage = () => {
                   />
                   <button
                     disabled={loading}
-                    className="flex items-center bg-primary-light text-primary-dark hover:text-primary-light hover:bg-primary-dark font-bold rounded-md px-6 py-2"
+                    className="transition flex items-center bg-primary-light text-primary-dark hover:text-primary-light hover:bg-primary-dark font-bold rounded-md px-6 py-2"
                   >
                     {loading && <Loading className="w-6 pr-1" />}
                     Send
@@ -160,7 +159,7 @@ const HomePage = () => {
 
               <a
                 href="https://www.linkedin.com/in/ophirfromm/"
-                className="flex items-center space-x-2"
+                className="transition flex items-center space-x-2"
               >
                 <svg
                   role="img"
@@ -196,7 +195,7 @@ const HomePage = () => {
 
               <a
                 href="https://www.linkedin.com/in/alonronin/"
-                className="flex items-center space-x-2"
+                className="transition flex items-center space-x-2"
               >
                 <svg
                   role="img"
@@ -220,6 +219,22 @@ const HomePage = () => {
             </article>
           </div>
         </section>
+
+        <section>
+          <h2>Come and meet us</h2>
+
+          <div className="flex h-96">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.6700775926656!2d34.79175781516436!3d32.07817108118863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4bf826e4b5f1%3A0xdc0e9bca5e76e704!2sDerech%20Menachem%20Begin%20144%2C%20Tel%20Aviv-Yafo!5e0!3m2!1sen!2sil!4v1638645667637!5m2!1sen!2sil"
+                className="flex-1 border-0" allowFullScreen="" loading="lazy" />
+          </div>
+        </section>
+      </div>
+      
+      <div className="fixed bottom-4 right-4">
+        <a href="https://wa.me/972544363360" className="block w-16 transition transform hover:scale-110 filter drop-shadow-md" target="_blank">
+          <img src="./icons8-whatsapp.svg" className="w-full h-full" alt=""/>
+        </a>
       </div>
     </div>
   );
