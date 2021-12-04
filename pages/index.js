@@ -164,6 +164,7 @@ const HomePage = () => {
               <a
                 href="https://www.linkedin.com/in/ophirfromm/"
                 className="transition flex items-center space-x-2"
+                target="_blank"
               >
                 <svg
                   role="img"
@@ -200,6 +201,7 @@ const HomePage = () => {
               <a
                 href="https://www.linkedin.com/in/alonronin/"
                 className="transition flex items-center space-x-2"
+                target="_blank"
               >
                 <svg
                   role="img"
