@@ -91,7 +91,7 @@ const HomePage = () => {
             From pre-seed to second round and successful company
           </h2>
 
-          <p>We are one-stop-shop support-offer you all what you will need!</p>
+          <p>We are one-stop-shop to support you with all that you need!</p>
 
           <ul>
             <li>We fully support you 100% "Hands On"</li>
@@ -149,6 +149,10 @@ const HomePage = () => {
         <section>
           <h2 className="font-bold text-2xl">Meet the founders</h2>
 
+          <p>
+            <span className="font-bold text-primary-default md:pr-2">INQBATE</span>
+            founded by industry leaders with 20+ years experience!</p>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <article className="flex flex-col items-center">
               <img
@@ -176,7 +180,7 @@ const HomePage = () => {
               <h3>Ophir Fromm - CEO</h3>
 
               <p>
-                27 years in the Hi-tech and Low-tech business. Until now he
+                A veteran in the Hi-tech and Low-tech business. Until now he
                 opened several start-ups both in Hi-tech and Low-tech fields.
                 Hi-tech and Low-tech. The last one at: 2012 was focused on
                 increasing efficiency of solar panels for electric and water
