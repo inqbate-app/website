@@ -150,8 +150,9 @@ const HomePage = () => {
           <h2 className="font-bold text-2xl">Meet the founders</h2>
 
           <p>
-            <span className="font-bold text-primary-default md:pr-2">INQBATE</span>
-            founded by industry leaders with 20+ years experience!</p>
+            <span className="font-bold text-primary-default">INQBATE</span>{' '}
+            founded by industry leaders with 20+ years experience!
+          </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <article className="flex flex-col items-center">
@@ -231,15 +232,22 @@ const HomePage = () => {
 
           <div className="flex h-96">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.6700775926656!2d34.79175781516436!3d32.07817108118863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4bf826e4b5f1%3A0xdc0e9bca5e76e704!2sDerech%20Menachem%20Begin%20144%2C%20Tel%20Aviv-Yafo!5e0!3m2!1sen!2sil!4v1638645667637!5m2!1sen!2sil"
-                className="flex-1 border-0" allowFullScreen="" loading="lazy" />
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.6700775926656!2d34.79175781516436!3d32.07817108118863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4bf826e4b5f1%3A0xdc0e9bca5e76e704!2sDerech%20Menachem%20Begin%20144%2C%20Tel%20Aviv-Yafo!5e0!3m2!1sen!2sil!4v1638645667637!5m2!1sen!2sil"
+              className="flex-1 border-0"
+              allowFullScreen=""
+              loading="lazy"
+            />
           </div>
         </section>
       </div>
-      
+
       <div className="fixed bottom-4 right-4">
-        <a href="https://wa.me/972544363360" className="block w-16 transition transform hover:scale-110 filter drop-shadow-md" target="_blank">
-          <img src="./icons8-whatsapp.svg" className="w-full h-full" alt=""/>
+        <a
+          href="https://wa.me/972544363360"
+          className="block w-16 transition transform hover:scale-110 filter drop-shadow-md"
+          target="_blank"
+        >
+          <img src="./icons8-whatsapp.svg" className="w-full h-full" alt="" />
         </a>
       </div>
     </div>
